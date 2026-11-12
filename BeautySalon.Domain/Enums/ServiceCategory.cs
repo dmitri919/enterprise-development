@@ -37,7 +37,7 @@ public enum ServiceCategory
     /// <summary>
     /// СПА
     /// </summary>
-    SPA = 7,
+    Spa = 7,
 
     /// <summary>
     /// Запасная категория

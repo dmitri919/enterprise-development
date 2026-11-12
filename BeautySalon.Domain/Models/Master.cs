@@ -13,7 +13,7 @@ public sealed class Master : Person
     /// <summary>
     /// Специализации мастера
     /// </summary>
-    public required HashSet<string> Specializations { get; init; }
+    public HashSet<string> Specializations { get; init; } = new(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
     /// Стаж работы в годах
