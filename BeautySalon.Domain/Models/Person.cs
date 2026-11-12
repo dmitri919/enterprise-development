@@ -3,7 +3,7 @@
 namespace BeautySalon.Domain.Models;
 
 /// <summary>
-/// Базовый класс для клионтов и мастеров
+/// Базовый класс для клиентов и мастеров
 /// </summary>
 public abstract class Person
 {
