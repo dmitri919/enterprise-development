@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "BeautySalon.Domain": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\dmalg\\Desktop\\РКП\\BeautySalon\\BeautySalon.Tests\\BeautySalon.Tests.csproj"
+    }
+  }
+}

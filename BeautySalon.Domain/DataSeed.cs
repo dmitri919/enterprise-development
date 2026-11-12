@@ -314,9 +314,9 @@ public static class DataSeed
         {
             Id = GuidOf(30),
             Name = "СПА-программа",
-            Category = ServiceCategory.SPA,
+            Category = ServiceCategory.Spa,
             Price = 7000m,
-            DurationMinutes = TimeSpan.FromMinutes(120)
+            DurationMinutes = 120
         }
     };
 
