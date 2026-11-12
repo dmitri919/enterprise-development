@@ -5,8 +5,7 @@ namespace BeautySalon.Tests;
 
 public sealed class BeautySalonDomainLab1Tests
 {
-    private static Guid GuidOf(int value) =>
-        Guid.Parse($"00000000-0000-0000-0000-{value:D12}");
+    private static Guid GuidOf(int value) => Guid.Parse($"00000000-0000-0000-0000-{value:D12}");
 
     private sealed record FreeSlot(DateTime Start, DateTime End, int DurationMinutes);
 
