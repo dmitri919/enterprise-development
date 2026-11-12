@@ -1,0 +1,40 @@
+﻿using BeautySalon.Domain.Enums;
+
+namespace BeautySalon.Domain.Models;
+
+/// <summary>
+/// Базовый класс для клионтов и мастеров
+/// </summary>
+public abstract class Person
+{
+    /// <summary>
+    /// Уникальный идентификатор персоны
+    /// </summary>
+    public required Guid Id { get; init; }
+
+    /// <summary>
+    /// ФИО
+    /// </summary>
+    public required string FullName { get; init; }
+
+    /// <summary>
+    /// Пол
+    /// </summary>
+    public required Gender Gender { get; init; }
+
+    /// <summary>
+    /// Дата рождения
+    /// </summary>
+    public required DateOnly BirthDate { get; init; }
+
+    /// <summary>
+    /// Номер телефона
+    /// </summary>
+    public required string PhoneNumber { get; init; }
+
+    /// <summary>
+    /// Строковое представление
+    /// </summary>
+    public override string ToString() =>
+    $"{Id}, {FullName}, {Gender}, {BirthDate:dd.MM.yyyy}, {PhoneNumber}";
+}
