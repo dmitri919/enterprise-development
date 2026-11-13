@@ -1,6 +1,8 @@
 ﻿using BeautySalon.Domain.Models;
 using BeautySalon.Enums;
 
+namespace BeautySalon.Domain;
+
 /// <summary>
 /// Тестовые данные для предметной области салона красоты.
 /// </summary>
