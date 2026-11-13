@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BeautySalon.Domain\BeautySalon.Domain.csproj" />
+    <ProjectReference Include="..\BeautySalon.Enums\BeautySalon.Enums.csproj" />
   </ItemGroup>
 
   <ItemGroup>

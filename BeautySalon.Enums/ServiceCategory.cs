@@ -1,4 +1,4 @@
-﻿namespace BeautySalon.Domain.Enums;
+﻿namespace BeautySalon.Enums;
 
 /// <summary>
 /// Категория услуги салона красоты.
@@ -8,39 +8,39 @@ public enum ServiceCategory
     /// <summary>
     /// Парикмахерские услуги
     /// </summary>
-    HairCare = 1,
+    HairCare = 0,
 
     /// <summary>
     /// Ногтевой сервис
     /// </summary>
-    NailCare = 2,
+    NailCare = 1,
 
     /// <summary>
     /// Косметология
     /// </summary>
-    Skincare = 3,
+    Skincare = 2,
 
     /// <summary>
     /// Макияж
     /// </summary>
-    Makeup = 4,
+    Makeup = 3,
 
     /// <summary>
     /// Эпиляция
     /// </summary>
-    HairRemoval = 5,
+    HairRemoval = 4,
     /// <summary>
     /// Массаж
     /// </summary>
-    Massage = 6,
+    Massage = 5,
 
     /// <summary>
     /// СПА
     /// </summary>
-    Spa = 7,
+    Spa = 6,
 
     /// <summary>
     /// Запасная категория
     /// </summary>
-    Other = 8
+    Other = 7
 }

@@ -1,4 +1,4 @@
-﻿namespace BeautySalon.Domain.Enums;
+﻿namespace BeautySalon.Enums;
 
 /// <summary>
 /// Пол человека
@@ -8,9 +8,9 @@ public enum Gender
     /// <summary>
     /// Муж.
     /// </summary>
-    Male = 1,
+    Male = 0,
      /// <summary>
      /// Жен.
      /// </summary>
-    Female = 2
+    Female = 1
 }
