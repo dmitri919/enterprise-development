@@ -1,4 +1,5 @@
-﻿using BeautySalon.Domain;
+﻿using BeautySalon.Domain.Data;
+using BeautySalon.Domain.Models;
 using Xunit;
 
 namespace BeautySalon.Tests;
