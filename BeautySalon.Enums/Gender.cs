@@ -9,6 +9,7 @@ public enum Gender
     /// Муж.
     /// </summary>
     Male = 0,
+
      /// <summary>
      /// Жен.
      /// </summary>

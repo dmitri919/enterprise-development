@@ -29,6 +29,7 @@ public enum ServiceCategory
     /// Эпиляция
     /// </summary>
     HairRemoval = 4,
+
     /// <summary>
     /// Массаж
     /// </summary>

@@ -14,7 +14,7 @@ public static class DataSeed
     private static DateTime Today => DateTime.Today;
 
     /// <summary>
-    /// Время сегодняя hour:minute.
+    /// Время сегодня.
     /// </summary>
     private static DateTime At(int hour, int minute = 0) =>
         Today.AddHours(hour).AddMinutes(minute);
@@ -31,7 +31,8 @@ public static class DataSeed
     public static List<Client> Clients { get; } = new()
     {
         new Client
-        {   LoyaltyPoints = 10,
+        {   
+            LoyaltyPoints = 10,
             Id = 1,
             FullName = "Иванова Мария Сергеевна",
             Gender = Gender.Female,
