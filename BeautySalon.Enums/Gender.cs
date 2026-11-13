@@ -10,8 +10,8 @@ public enum Gender
     /// </summary>
     Male = 0,
 
-     /// <summary>
-     /// Жен.
-     /// </summary>
+    /// <summary>
+    /// Жен.
+    /// </summary>
     Female = 1
 }

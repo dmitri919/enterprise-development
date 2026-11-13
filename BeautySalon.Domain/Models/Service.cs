@@ -31,7 +31,7 @@ public class Service
     /// Длительность услуги в минутах
     /// </summary>
     public required TimeSpan Duration { get; set; }
-    
+
     /// <summary>
     /// Строковое представление
     /// </summary>

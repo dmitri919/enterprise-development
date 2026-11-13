@@ -31,7 +31,7 @@ public static class DataSeed
     public static List<Client> Clients { get; } = new()
     {
         new Client
-        {   
+        {
             LoyaltyPoints = 10,
             Id = 1,
             FullName = "Иванова Мария Сергеевна",
