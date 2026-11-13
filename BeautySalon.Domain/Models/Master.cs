@@ -13,7 +13,7 @@ public class Master : Person
     /// <summary>
     /// Специализации мастера
     /// </summary>
-    public HashSet<string> Specializations { get; set; } = new(StringComparer.OrdinalIgnoreCase); /// Изменить? (3 лаба)
+    public HashSet<string> Specializations { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
     /// Стаж работы в годах
