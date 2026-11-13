@@ -15,22 +15,22 @@ public class Service
     /// <summary>
     /// Название услуги
     /// </summary>
-    public required string Name { get; init; }
+    public required string Name { get; set; }
 
     /// <summary>
     /// Категория услуги
     /// </summary>
-    public required ServiceCategory Category { get; init; }
+    public required ServiceCategory Category { get; set; }
 
     /// <summary>
     /// Стоимость услуги
     /// </summary>
-    public required decimal Price { get; init; }
+    public required decimal Price { get; set; }
 
     /// <summary>
     /// Длительность услуги в минутах
     /// </summary>
-    public required int DurationMinutes { get; init; }
+    public required int DurationMinutes { get; set; }
     public TimeSpan Duration => TimeSpan.FromMinutes(DurationMinutes);
 
     /// <summary>

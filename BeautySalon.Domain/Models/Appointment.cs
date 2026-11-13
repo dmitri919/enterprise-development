@@ -13,27 +13,27 @@ public class Appointment
     /// <summary>
     /// Идентификатор клиента
     /// </summary>
-    public required Guid ClientId { get; init; }
+    public required Guid ClientId { get; set; }
 
     /// <summary>
     /// Идентификатор мастера
     /// </summary>
-    public required Guid MasterId { get; init; }
+    public required Guid MasterId { get; set; }
 
     /// <summary>
     /// Идентификатор услуги
     /// </summary>
-    public required Guid ServiceId { get; init; }
+    public required Guid ServiceId { get; set; }
 
     /// <summary>
     /// Дата и время начала записи
     /// </summary>
-    public required DateTime StartDateTime { get; init; }
+    public required DateTime StartDateTime { get; set; }
 
     /// <summary>
     /// Постоянный клиент?
     /// </summary>
-    public required bool IsRegularClient { get; init; }
+    public required bool IsRegularClient { get; set; }
 
     /// <summary>
     /// Строковое представление записи

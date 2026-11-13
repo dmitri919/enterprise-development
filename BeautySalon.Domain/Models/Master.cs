@@ -8,17 +8,17 @@ public sealed class Master : Person
     /// <summary>
     /// Номер паспорта мастера
     /// </summary>
-    public required string PassportNumber { get; init; }
+    public required string PassportNumber { get; set; }
 
     /// <summary>
     /// Специализации мастера
     /// </summary>
-    public HashSet<string> Specializations { get; init; } = new(StringComparer.OrdinalIgnoreCase);
+    public HashSet<string> Specializations { get; set; } = new(StringComparer.OrdinalIgnoreCase); /// Изменить? (3 лаба)
 
     /// <summary>
     /// Стаж работы в годах
     /// </summary>
-    public required int ExperienceYears { get; init; }
+    public required int ExperienceYears { get; set; }
 
     /// <summary>
     /// Строковое представление

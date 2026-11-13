@@ -15,22 +15,22 @@ public abstract class Person
     /// <summary>
     /// ФИО
     /// </summary>
-    public required string FullName { get; init; }
+    public required string FullName { get; set; }
 
     /// <summary>
     /// Пол
     /// </summary>
-    public required Gender Gender { get; init; }
+    public required Gender Gender { get; set; }
 
     /// <summary>
     /// Дата рождения
     /// </summary>
-    public required DateOnly BirthDate { get; init; }
+    public required DateOnly BirthDate { get; set; }
 
     /// <summary>
     /// Номер телефона
     /// </summary>
-    public required string PhoneNumber { get; init; }
+    public required string PhoneNumber { get; set; }
 
     /// <summary>
     /// Строковое представление
