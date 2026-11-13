@@ -2,19 +2,10 @@ name: CI
 
 on:
   push:
-    branches:
-      - 'lab*'
   pull_request:
-    branches:
-      - 'lab1*'
-  workflow_dispatch:
 
 permissions:
   contents: read
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   build-and-test:
@@ -31,9 +22,6 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      - name: Show .NET SDK info
-        run: dotnet --info
-
       - name: Restore test project
         run: |
           dotnet restore BeautySalon.slnx
@@ -46,17 +34,6 @@ jobs:
 
       - name: Run tests
         run: |
-          dotnet test BeautySalon.Tests/BeautySalon.Tests.csproj \
+          dotnet test BeautySalon.slnx \
             --configuration Release \
             --no-build \
-            --verbosity normal \
-            --logger "trx;LogFileName=test-results.trx" \
-            --results-directory ./TestResults
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results-${{ github.run_number }}
-          path: ./TestResults/**/*.trx
-          retention-days: 60
