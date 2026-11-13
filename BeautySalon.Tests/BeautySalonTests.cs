@@ -32,7 +32,7 @@ public sealed class BeautySalonQueriesTests
             .Select(m => m.Id)
             .ToArray();
 
-        // Asert
+        // Assert
         Assert.Equal(expectedIds, actualIds);
     }
 
@@ -78,13 +78,12 @@ public sealed class BeautySalonQueriesTests
                 (int)(slot.End - slot.Start).TotalMinutes))
             .ToArray();
 
-        // Asert
+        // Assert
         Assert.Equal(expectedSlots, actualSlots);
     }
 
     /// <summary>
     /// 3.Вывести топ 5 наиболее популярных услуг.
-
     /// </summary>
     [Fact]
     public void Top5_PopularServices_AreReturnedByAppointmentCount()
@@ -109,7 +108,7 @@ public sealed class BeautySalonQueriesTests
             .Take(5)
             .ToArray();
 
-        // Asert
+        // Assert
         Assert.Equal(expectedIds, actual.Select(s => s.ServiceId).ToArray());
         Assert.Equal(expectedCounts, actual.Select(s => s.AppointmentCount).ToArray());
     }
@@ -144,7 +143,7 @@ public sealed class BeautySalonQueriesTests
             .Where(g => g.Count() > 1)
             .Sum(g => g.Count() - 1);
 
-        // Asert
+        // Assert
         Assert.Equal(expectedRepeatClientIds, repeatClientIds);
         Assert.Equal(expectedRepeatAppointments, additionalRepeatAppointments);
     }
@@ -189,7 +188,7 @@ public sealed class BeautySalonQueriesTests
                 x.MasterCount))
             .ToArray();
 
-        //Asert
+        //Assert
         Assert.Equal(expected, actual);
     }
 }
