@@ -253,7 +253,7 @@ public static class DataSeed
             Name = "Маникюр классический",
             Category = ServiceCategory.NailCare,
             Price = 1500m,
-            DurationMinutes = 60
+            Duration = TimeSpan.FromMinutes(60)
         },
         new Service
         {
@@ -261,7 +261,7 @@ public static class DataSeed
             Name ="Педикюр",
             Category = ServiceCategory.NailCare,
             Price = 2000m,
-            DurationMinutes = 90
+            Duration = TimeSpan.FromMinutes(90)
         },
         new Service
         {
@@ -269,7 +269,7 @@ public static class DataSeed
             Name = "Женская стрижка",
             Category = ServiceCategory.HairCare,
             Price = 2500m,
-            DurationMinutes = 90
+            Duration = TimeSpan.FromMinutes(90)
         },
         new Service
         {
@@ -277,7 +277,7 @@ public static class DataSeed
             Name = "Мужская стрижка",
             Category = ServiceCategory.HairCare,
             Price = 1800m,
-            DurationMinutes = 60
+            Duration = TimeSpan.FromMinutes(60)
         },
         new Service
         {
@@ -285,7 +285,7 @@ public static class DataSeed
             Name = "Окрашивание волос",
             Category = ServiceCategory.HairCare,
             Price = 5000m,
-            DurationMinutes = 180
+            Duration = TimeSpan.FromMinutes(180)
         },
         new Service
         {
@@ -293,7 +293,7 @@ public static class DataSeed
             Name = "Чистка лица",
             Category = ServiceCategory.Skincare,
             Price = 3500m,
-            DurationMinutes = 75
+            Duration = TimeSpan.FromMinutes(75)
         },
         new Service
         {
@@ -301,7 +301,7 @@ public static class DataSeed
             Name = "Уходовая маска для лица",
             Category = ServiceCategory.Skincare,
             Price = 2200m,
-            DurationMinutes = 45
+            Duration = TimeSpan.FromMinutes(45)
         },
         new Service
         {
@@ -309,7 +309,7 @@ public static class DataSeed
             Name = "Вечерний макияж",
             Category = ServiceCategory.Makeup,
             Price = 4000m,
-            DurationMinutes = 90
+            Duration = TimeSpan.FromMinutes(90)
         },
         new Service
         {
@@ -317,7 +317,7 @@ public static class DataSeed
             Name = "Депиляция ног",
             Category = ServiceCategory.HairRemoval,
             Price = 3000m,
-            DurationMinutes = 60
+            Duration = TimeSpan.FromMinutes(60)
         },
         new Service
         {
@@ -325,7 +325,7 @@ public static class DataSeed
             Name = "СПА-программа",
             Category = ServiceCategory.Spa,
             Price = 7000m,
-            DurationMinutes = 120
+            Duration = TimeSpan.FromMinutes(120)
         }
     };
 

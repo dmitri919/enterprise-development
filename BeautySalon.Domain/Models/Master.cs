@@ -3,7 +3,7 @@
 /// <summary>
 /// Мастер салона красоты.
 /// </summary>
-public sealed class Master : Person
+public class Master : Person
 {
     /// <summary>
     /// Номер паспорта мастера

@@ -30,12 +30,11 @@ public class Service
     /// <summary>
     /// Длительность услуги в минутах
     /// </summary>
-    public required int DurationMinutes { get; set; }
-    public TimeSpan Duration => TimeSpan.FromMinutes(DurationMinutes);
-
+    public required TimeSpan Duration { get; set; }
+    
     /// <summary>
     /// Строковое представление
     /// </summary>
     public override string ToString() =>
-    $"{Id}, {Name}, {Category}, {Price}, {DurationMinutes} min";
+    $"{Id}, {Name}, {Category}, {Price}, {Duration}";
 }
