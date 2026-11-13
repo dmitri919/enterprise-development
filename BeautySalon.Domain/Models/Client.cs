@@ -9,6 +9,7 @@ public class Client : Person
     /// Количество баллов в программе лояльности.
     /// </summary>
     public required int LoyaltyPoints { get; set; }
+
     /// <summary>
     /// Строковое представление
     /// </summary>
