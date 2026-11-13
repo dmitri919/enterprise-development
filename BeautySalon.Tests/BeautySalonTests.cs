@@ -5,14 +5,12 @@ namespace BeautySalon.Tests;
 
 public sealed class BeautySalonDomainLab1Tests
 {
-    private static Guid GuidOf(int value) => Guid.Parse($"00000000-0000-0000-0000-{value:D12}");
-
     private sealed record FreeSlot(DateTime Start, DateTime End, int DurationMinutes);
 
-    private sealed record ServicePopularity(Guid ServiceId, string Name, int AppointmentCount);
+    private sealed record ServicePopularity(int ServiceId, string Name, int AppointmentCount);
 
     private sealed record ClientMasterInfo(
-        Guid ClientId,
+        int ClientId,
         string FullName,
         DateOnly BirthDate,
         int MasterCount);
@@ -23,9 +21,7 @@ public sealed class BeautySalonDomainLab1Tests
     [Fact]
     public void Masters_WithExperienceAtLeastFive_AreReturned()
     {
-        var expectedIds = new[] { 11, 13, 14, 16, 18, 20 }
-            .Select(GuidOf)
-            .ToArray();
+        var expectedIds = new[] { 11, 13, 14, 16, 18, 20 };
 
         var actualIds = DataSeed.Masters
             .Where(m => m.ExperienceYears >= 5)
@@ -100,9 +96,7 @@ public sealed class BeautySalonDomainLab1Tests
             .Take(5)
             .ToArray();
 
-        var expectedIds = new[] { 21, 22, 23, 24, 25 }
-            .Select(GuidOf)
-            .ToArray();
+        var expectedIds = new[] { 21, 22, 23, 24, 25 };
 
         var expectedCounts = new[] { 4, 3, 2, 2, 2 };
 
@@ -135,16 +129,14 @@ public sealed class BeautySalonDomainLab1Tests
             .Where(g => g.Count() > 1)
             .Sum(g => g.Count() - 1);
 
-        var expectedRepeatClientIds = new[] { 1, 2, 3, 4, 8 }
-            .Select(GuidOf)
-            .ToArray();
+        var expectedRepeatClientIds = new[] { 1, 2, 3, 4, 8 };
 
         Assert.Equal(expectedRepeatClientIds, repeatClientIds);
         Assert.Equal(5, additionalRepeatAppointments);
     }
 
     /// <summary>
-    /// 5. Вывести информацию о клиентах, записанных к нескольким мастерам, упорядочить по дате рождения. .
+    /// 5. Вывести информацию о клиентах, записанных к нескольким мастерам, упорядочить по дате рождения.
     /// </summary>
     [Fact]
     public void Clients_BookedToSeveralMasters_AreOrderedByBirthDate()
@@ -172,11 +164,11 @@ public sealed class BeautySalonDomainLab1Tests
 
         var expected = new[]
         {
-            new ClientMasterInfo(GuidOf(4), "Кузнецов Сергей Павлович", new DateOnly(1975, 7, 30), 2),
-            new ClientMasterInfo(GuidOf(2), "Петров Дмитрий Алексеевич", new DateOnly(1988, 11, 2), 2),
-            new ClientMasterInfo(GuidOf(8), "Федоров Максим Юрьевич", new DateOnly(1990, 6, 18), 2),
-            new ClientMasterInfo(GuidOf(1), "Иванова Мария Сергеевна", new DateOnly(1995, 5, 20), 2),
-            new ClientMasterInfo(GuidOf(3), "Сидорова Анна Викторовна", new DateOnly(2000, 1, 15), 2)
+            new ClientMasterInfo(4, "Кузнецов Сергей Павлович", new DateOnly(1975, 7, 30), 2),
+            new ClientMasterInfo(2, "Петров Дмитрий Алексеевич", new DateOnly(1988, 11, 2), 2),
+            new ClientMasterInfo(8, "Федоров Максим Юрьевич", new DateOnly(1990, 6, 18), 2),
+            new ClientMasterInfo(1, "Иванова Мария Сергеевна", new DateOnly(1995, 5, 20), 2),
+            new ClientMasterInfo(3, "Сидорова Анна Викторовна", new DateOnly(2000, 1, 15), 2)
         };
 
         Assert.Equal(expected, actual);

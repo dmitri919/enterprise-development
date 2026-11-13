@@ -13,5 +13,5 @@ public class Client : Person
     /// Строковое представление
     /// </summary>
     public override string ToString() =>
-        $"Client: {base.ToString()}";
+        $"Client: {base.ToString()}, {LoyaltyPoints} pts.";
 }

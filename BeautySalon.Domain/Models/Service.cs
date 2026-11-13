@@ -10,7 +10,7 @@ public class Service
     /// <summary>
     /// Уникальный идентификатор услуги
     /// </summary>
-    public required Guid Id { get; init; }
+    public required int Id { get; init; }
 
     /// <summary>
     /// Название услуги
@@ -36,5 +36,5 @@ public class Service
     /// Строковое представление
     /// </summary>
     public override string ToString() =>
-    $"{Id}, {Name}, {Category}, {Price}, {Duration}";
+    $"Name: {Name}, Category: {Category}, Price: {Price}, Duration: {Duration}";
 }

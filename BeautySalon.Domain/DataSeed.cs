@@ -9,12 +9,6 @@ namespace BeautySalon.Domain;
 public static class DataSeed
 {
     /// <summary>
-    /// Фиксированный Guid по числу.
-    /// </summary>
-    private static Guid GuidOf(int value) =>
-        Guid.Parse($"00000000-0000-0000-0000-{value:D12}");
-
-    /// <summary>
     /// Сегодняшняя дата без времени.
     /// </summary>
     private static DateTime Today => DateTime.Today;
@@ -38,7 +32,7 @@ public static class DataSeed
     {
         new Client
         {   LoyaltyPoints = 10,
-            Id = GuidOf(1),
+            Id = 1,
             FullName = "Иванова Мария Сергеевна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1995, 5, 20),
@@ -47,7 +41,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 11,
-            Id = GuidOf(2),
+            Id = 2,
             FullName = "Петров Дмитрий Алексеевич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1988, 11, 2),
@@ -56,7 +50,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 12,
-            Id = GuidOf(3),
+            Id = 3,
             FullName = "Сидорова Анна Викторовна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(2000, 1, 15),
@@ -65,7 +59,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 13,
-            Id = GuidOf(4),
+            Id = 4,
             FullName = "Кузнецов Сергей Павлович",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1975, 7, 30),
@@ -74,7 +68,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 14,
-            Id = GuidOf(5),
+            Id = 5,
             FullName = "Морозова Елена Дмитриевна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1992, 3, 11),
@@ -83,7 +77,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 15,
-            Id = GuidOf(6),
+            Id = 6,
             FullName = "Волков Андрей Игоревич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1985, 9, 25),
@@ -92,7 +86,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 16,
-            Id = GuidOf(7),
+            Id = 7,
             FullName = "Новикова Ольга Николаевна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1998, 12, 5),
@@ -101,7 +95,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 17,
-            Id = GuidOf(8),
+            Id = 8,
             FullName = "Федоров Максим Юрьевич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1990, 6, 18),
@@ -110,7 +104,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 18,
-            Id = GuidOf(9),
+            Id = 9,
             FullName = "Захарова Ирина Александровна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1983, 4, 27),
@@ -119,7 +113,7 @@ public static class DataSeed
         new Client
         {
             LoyaltyPoints = 19,
-            Id = GuidOf(10),
+            Id = 10,
             FullName = "Белов Кирилл Романович",
             Gender = Gender.Male,
             BirthDate = new DateOnly(2001, 8, 9),
@@ -134,7 +128,7 @@ public static class DataSeed
     {
         new Master
         {
-            Id = GuidOf(11),
+            Id = 11,
             FullName = "Петрова Анна Викторовна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1990, 3, 15),
@@ -145,7 +139,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(12),
+            Id = 12,
             FullName = "Соколов Игорь Михайлович",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1982, 5, 4),
@@ -156,7 +150,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(13),
+            Id = 13,
             FullName = "Михайлова Татьяна Сергеевна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1978, 10, 20),
@@ -167,7 +161,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(14),
+            Id = 14,
             FullName = "Козлов Дмитрий Андреевич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1991, 2, 14),
@@ -178,7 +172,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(15),
+            Id = 15,
             FullName = "Лебедева Мария Ивановна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1999, 6, 30),
@@ -189,7 +183,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(16),
+            Id = 16,
             FullName = "Орлов Алексей Петрович",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1980, 12, 1),
@@ -200,7 +194,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(17),
+            Id = 17,
             FullName = "Егорова Светлана Николаевна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1994, 9, 17),
@@ -211,7 +205,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(18),
+            Id = 18,
             FullName = "Павлов Роман Дмитриевич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1976, 1, 25),
@@ -222,7 +216,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(19),
+            Id = 19,
             FullName = "Семенова Дарья Александровна",
             Gender = Gender.Female,
             BirthDate = new DateOnly(1997, 11, 11),
@@ -233,7 +227,7 @@ public static class DataSeed
         },
         new Master
         {
-            Id = GuidOf(20),
+            Id = 20,
             FullName = "Громов Виктор Сергеевич",
             Gender = Gender.Male,
             BirthDate = new DateOnly(1987, 8, 8),
@@ -251,7 +245,7 @@ public static class DataSeed
     {
         new Service
         {
-            Id = GuidOf(21),
+            Id = 21,
             Name = "Маникюр классический",
             Category = ServiceCategory.NailCare,
             Price = 1500m,
@@ -259,7 +253,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(22),
+            Id = 22,
             Name ="Педикюр",
             Category = ServiceCategory.NailCare,
             Price = 2000m,
@@ -267,7 +261,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(23),
+            Id = 23,
             Name = "Женская стрижка",
             Category = ServiceCategory.HairCare,
             Price = 2500m,
@@ -275,7 +269,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(24),
+            Id = 24,
             Name = "Мужская стрижка",
             Category = ServiceCategory.HairCare,
             Price = 1800m,
@@ -283,7 +277,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(25),
+            Id = 25,
             Name = "Окрашивание волос",
             Category = ServiceCategory.HairCare,
             Price = 5000m,
@@ -291,7 +285,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(26),
+            Id = 26,
             Name = "Чистка лица",
             Category = ServiceCategory.Skincare,
             Price = 3500m,
@@ -299,7 +293,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(27),
+            Id = 27,
             Name = "Уходовая маска для лица",
             Category = ServiceCategory.Skincare,
             Price = 2200m,
@@ -307,7 +301,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(28),
+            Id = 28,
             Name = "Вечерний макияж",
             Category = ServiceCategory.Makeup,
             Price = 4000m,
@@ -315,7 +309,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(29),
+            Id = 29,
             Name = "Депиляция ног",
             Category = ServiceCategory.HairRemoval,
             Price = 3000m,
@@ -323,7 +317,7 @@ public static class DataSeed
         },
         new Service
         {
-            Id = GuidOf(30),
+            Id = 30,
             Name = "СПА-программа",
             Category = ServiceCategory.Spa,
             Price = 7000m,
@@ -340,7 +334,7 @@ public static class DataSeed
         // 09:00-10:00, потом окошко 10:00-11:30.
         new Appointment
         {
-            Id = GuidOf(31),
+            Id = 31,
             ClientId = Clients[0].Id,
             MasterId = Masters[0].Id,
             ServiceId = Services[0].Id,
@@ -351,7 +345,7 @@ public static class DataSeed
         // 11:30-13:00, потом окошко 13:00-13:30.
         new Appointment
         {
-            Id = GuidOf(32),
+            Id = 32,
             ClientId = Clients[1].Id,
             MasterId = Masters[0].Id,
             ServiceId = Services[1].Id,
@@ -362,7 +356,7 @@ public static class DataSeed
         // 13:30-14:30, потом окошко 14:30-16:00.
         new Appointment
         {
-            Id = GuidOf(33),
+            Id = 33,
             ClientId = Clients[2].Id,
             MasterId = Masters[0].Id,
             ServiceId = Services[0].Id,
@@ -373,7 +367,7 @@ public static class DataSeed
         // 16:00-17:30.
         new Appointment
         {
-            Id = GuidOf(34),
+            Id = 34,
             ClientId = Clients[3].Id,
             MasterId = Masters[0].Id,
             ServiceId = Services[2].Id,
@@ -384,7 +378,7 @@ public static class DataSeed
         // Повторная запись клиента Clients[0] к другому мастеру.
         new Appointment
         {
-            Id = GuidOf(35),
+            Id = 35,
             ClientId = Clients[0].Id,
             MasterId = Masters[1].Id,
             ServiceId = Services[0].Id,
@@ -395,7 +389,7 @@ public static class DataSeed
         // Повторная запись клиента Clients[1] к другому мастеру.
         new Appointment
         {
-            Id = GuidOf(36),
+            Id = 36,
             ClientId = Clients[1].Id,
             MasterId = Masters[2].Id,
             ServiceId = Services[1].Id,
@@ -406,7 +400,7 @@ public static class DataSeed
         // Повторная запись клиента Clients[2] к другому мастеру.
         new Appointment
         {
-            Id = GuidOf(37),
+            Id = 37,
             ClientId = Clients[2].Id,
             MasterId = Masters[3].Id,
             ServiceId = Services[2].Id,
@@ -417,7 +411,7 @@ public static class DataSeed
         // Повторная запись клиента Clients[3] к другому мастеру.
         new Appointment
         {
-            Id = GuidOf(38),
+            Id = 38,
             ClientId = Clients[3].Id,
             MasterId = Masters[4].Id,
             ServiceId = Services[0].Id,
@@ -428,7 +422,7 @@ public static class DataSeed
         // Еще записи для статистики по услугам.
         new Appointment
         {
-            Id = GuidOf(39),
+            Id = 39,
             ClientId = Clients[4].Id,
             MasterId = Masters[5].Id,
             ServiceId = Services[1].Id,
@@ -437,7 +431,7 @@ public static class DataSeed
         },
         new Appointment
         {
-            Id = GuidOf(40),
+            Id = 40,
             ClientId = Clients[5].Id,
             MasterId = Masters[6].Id,
             ServiceId = Services[3].Id,
@@ -446,7 +440,7 @@ public static class DataSeed
         },
         new Appointment
         {
-            Id = GuidOf(41),
+            Id = 41,
             ClientId = Clients[6].Id,
             MasterId = Masters[7].Id,
             ServiceId = Services[3].Id,
@@ -457,7 +451,7 @@ public static class DataSeed
         // Клиент Clients[7] записан к нескольким мастерам и имеет повторные записи за последний месяц.
         new Appointment
         {
-            Id = GuidOf(42),
+            Id = 42,
             ClientId = Clients[7].Id,
             MasterId = Masters[8].Id,
             ServiceId = Services[4].Id,
@@ -466,7 +460,7 @@ public static class DataSeed
         },
         new Appointment
         {
-            Id = GuidOf(43),
+            Id = 43,
             ClientId = Clients[7].Id,
             MasterId = Masters[9].Id,
             ServiceId = Services[5].Id,
@@ -477,7 +471,7 @@ public static class DataSeed
         // Дополнительная запись для популярности услуги Services[4].
         new Appointment
         {
-            Id = GuidOf(44),
+            Id = 44,
             ClientId = Clients[8].Id,
             MasterId = Masters[1].Id,
             ServiceId = Services[4].Id,

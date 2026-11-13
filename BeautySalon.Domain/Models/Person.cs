@@ -10,7 +10,7 @@ public abstract class Person
     /// <summary>
     /// Уникальный идентификатор персоны
     /// </summary>
-    public required Guid Id { get; init; }
+    public required int Id { get; init; }
 
     /// <summary>
     /// ФИО
@@ -36,5 +36,5 @@ public abstract class Person
     /// Строковое представление
     /// </summary>
     public override string ToString() =>
-    $"{Id}, {FullName}, {Gender}, {BirthDate:dd.MM.yyyy}, {PhoneNumber}";
+    $"Full name: {FullName}, Gender: {Gender}, Birth date: {BirthDate:dd.MM.yyyy}, Phone: {PhoneNumber}";
 }

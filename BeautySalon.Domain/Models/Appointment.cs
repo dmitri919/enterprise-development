@@ -8,22 +8,22 @@ public class Appointment
     /// <summary>
     /// Уникальный идентификатор записи
     /// </summary>
-    public required Guid Id { get; init; }
+    public required int Id { get; init; }
 
     /// <summary>
     /// Идентификатор клиента
     /// </summary>
-    public required Guid ClientId { get; set; }
+    public required int ClientId { get; set; }
 
     /// <summary>
     /// Идентификатор мастера
     /// </summary>
-    public required Guid MasterId { get; set; }
+    public required int MasterId { get; set; }
 
     /// <summary>
     /// Идентификатор услуги
     /// </summary>
-    public required Guid ServiceId { get; set; }
+    public required int ServiceId { get; set; }
 
     /// <summary>
     /// Дата и время начала записи
@@ -39,6 +39,6 @@ public class Appointment
     /// Строковое представление записи
     /// </summary>
     public override string ToString() =>
-        $"{Id}, ClientId: {ClientId}, MasterId: {MasterId}, ServiceId: {ServiceId}, " +
+        $"ClientId: {ClientId}, MasterId: {MasterId}, ServiceId: {ServiceId}, " +
         $"Start: {StartDateTime:dd.MM.yyyy HH:mm}, Regular: {IsRegularClient}";
 }
