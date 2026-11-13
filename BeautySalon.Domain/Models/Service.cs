@@ -10,7 +10,7 @@ public class Service
     /// <summary>
     /// Уникальный идентификатор услуги
     /// </summary>
-    public required int Id { get; init; }
+    public required int Id { get; set; }
 
     /// <summary>
     /// Название услуги

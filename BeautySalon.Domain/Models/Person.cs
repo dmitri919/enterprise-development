@@ -10,7 +10,7 @@ public abstract class Person
     /// <summary>
     /// Уникальный идентификатор персоны
     /// </summary>
-    public required int Id { get; init; }
+    public required int Id { get; set; }
 
     /// <summary>
     /// ФИО
