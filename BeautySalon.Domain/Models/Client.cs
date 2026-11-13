@@ -6,6 +6,10 @@
 public class Client : Person
 {
     /// <summary>
+    /// Количество баллов в программе лояльности.
+    /// </summary>
+    public required int LoyaltyPoints { get; set; }
+    /// <summary>
     /// Строковое представление
     /// </summary>
     public override string ToString() =>

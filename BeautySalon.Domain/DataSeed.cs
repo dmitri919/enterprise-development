@@ -1,5 +1,5 @@
-﻿using BeautySalon.Enums;
-using BeautySalon.Domain.Models;
+﻿using BeautySalon.Domain.Models;
+using BeautySalon.Enums;
 
 /// <summary>
 /// Тестовые данные для предметной области салона красоты.
@@ -35,7 +35,7 @@ public static class DataSeed
     public static List<Client> Clients { get; } = new()
     {
         new Client
-        {
+        {   LoyaltyPoints = 10,
             Id = GuidOf(1),
             FullName = "Иванова Мария Сергеевна",
             Gender = Gender.Female,
@@ -44,6 +44,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 11,
             Id = GuidOf(2),
             FullName = "Петров Дмитрий Алексеевич",
             Gender = Gender.Male,
@@ -52,6 +53,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 12,
             Id = GuidOf(3),
             FullName = "Сидорова Анна Викторовна",
             Gender = Gender.Female,
@@ -60,6 +62,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 13,
             Id = GuidOf(4),
             FullName = "Кузнецов Сергей Павлович",
             Gender = Gender.Male,
@@ -68,6 +71,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 14,
             Id = GuidOf(5),
             FullName = "Морозова Елена Дмитриевна",
             Gender = Gender.Female,
@@ -76,6 +80,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 15,
             Id = GuidOf(6),
             FullName = "Волков Андрей Игоревич",
             Gender = Gender.Male,
@@ -84,6 +89,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 16,
             Id = GuidOf(7),
             FullName = "Новикова Ольга Николаевна",
             Gender = Gender.Female,
@@ -92,6 +98,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 17,
             Id = GuidOf(8),
             FullName = "Федоров Максим Юрьевич",
             Gender = Gender.Male,
@@ -100,6 +107,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 18,
             Id = GuidOf(9),
             FullName = "Захарова Ирина Александровна",
             Gender = Gender.Female,
@@ -108,6 +116,7 @@ public static class DataSeed
         },
         new Client
         {
+            LoyaltyPoints = 19,
             Id = GuidOf(10),
             FullName = "Белов Кирилл Романович",
             Gender = Gender.Male,
