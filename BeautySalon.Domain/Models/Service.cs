@@ -1,4 +1,4 @@
-﻿using BeautySalon.Domain.Enums;
+﻿using BeautySalon.Enums;
 
 namespace BeautySalon.Domain.Models;
 
